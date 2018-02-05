@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: serviceB
+    instance_id: 1
+
+server:
+  port: 8082
+
+eureka:
+  instance:
+    instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+  client:
+    healthcheck:
+      enabled: true
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
