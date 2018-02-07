@@ -15,7 +15,7 @@ import java.net.URISyntaxException;
  */
 
 @RestController
-public class TestController {
+public class LoadBalancerClientController {
 
     @Autowired
     private LoadBalancerClient discoveryClient;
