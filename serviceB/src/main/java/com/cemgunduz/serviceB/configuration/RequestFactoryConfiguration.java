@@ -1,4 +1,4 @@
-package com.cemgunduz.serviceB;
+package com.cemgunduz.serviceB.configuration;
 
 import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.loadbalancer.LoadBalancerClient;
@@ -18,7 +18,7 @@ import java.util.Arrays;
  */
 
 @Configuration
-public class TemplateConfiguration {
+public class RequestFactoryConfiguration {
 
     @Bean
     LoadBalancerRequestFactory loadBalancerRequestFactory(LoadBalancerClient loadBalancer) {
