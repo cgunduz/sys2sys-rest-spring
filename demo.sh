@@ -1,3 +1,5 @@
+#!/bin/bash
+
 mvn spring-boot:run -f registry/pom.xml &
 sleep 3
 mvn spring-boot:run -f serviceA/pom.xml &
